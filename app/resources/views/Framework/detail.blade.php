@@ -14,9 +14,8 @@
       <p>{{ $data['id'] }}</p>
       <input type="hidden" name="framework_id" value="{{ $data->id }}" >
       <p>{{ $data['name'] }}</p>
-      <input type="hidden" name="framework_id" value="{{ $data->name }}" > 
-      <p>ジャンル</p>
-      <p>{{ $data['genre'] }}</p>
+      <input type="hidden" name="framework_name" value="{{ $data->name }}" > 
+      
 
     <li>タグ</li>
     <li>タグ</li>

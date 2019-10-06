@@ -42,6 +42,7 @@
                             
                             <div class="collapse navbar-collapse" id="navbar-classic">
                                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
+
                                     <li>
                                     <a class="nav-link" href="/index">Homepage</a>       
                                     </li>
@@ -50,85 +51,18 @@
                                     <a class="nav-link" href="/framework/form">framework作成</a>       
                                     </li>
 
-                                    
+                                    <li>
+                                    <a class="nav-link" href="/member">member</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-3">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="about.html">
-                                                    About us</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="pricing.html">
-                                                    Pricing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="register-page.html">
-                                                    Register</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="login-page.html">
-                                                    Login</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="inquiry-form.html">
-                                                    Inquiry Form</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="forget-password-page.html">
-                                                    Forgot Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="reset-password-page.html">
-                                                    Reset Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="error-page.html">
-                                                    404 Error</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="contact.html">
-                                                    Contact</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-4">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog.html">
-                                                    Blog List</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-thumbnail.html">
-                                                    Blog Thumbnail</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-single.html">
-                                                    Blog Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./docs/index.html">
-                                            Docs
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="dashboard-overview.html">
-                                            Dashboard
-                                        </a>
-                                    </li>
+
                                 </ul>
+
                                 <div class="header-btn d-xl-block d-lg-none">
-                                     <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">Login</a>
-                                    <a href="inquiry-form.html" class="btn btn-primary"><i class="fas fa-plus"></i>List a space</a>
+                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">
+                                        Login
+                                    </a>
                                 </div>
+
                             </div>
                         </nav>
                     </div>
@@ -137,12 +71,12 @@
             <!-- navigation close -->
         </div>
         <!-- header close -->
+
         <div class="container-fluid">
                 <!-- hero section start  -->
             <div class="hero-slider-section">
                 <div class="row">
                     <div class="col-xl-12">
-
                         <div class="hero-slider">
                                  <!-- hero slider item start  -->
                             <div class="hero-slider-item">
@@ -162,84 +96,28 @@
                 <div class="hero-search-area">
                     <div class="row">
                         <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+
                             <div class="hero-search-area-caption">
-                                <h1 class="hero-search-area-caption-title">The Best  frame work in your mind</h1>
-                                <p class="hero-search-area-caption-text">Book from thousands of unique work and meeting spaces.</p>
+                                <h1 class="hero-search-area-caption-title">frameworkを探す</h1>
+                                <p class="hero-search-area-caption-text"></p>
                             </div>
-                            <div class="hero-search-area-form">
-                                <form class="form-row">
+
+                            <div class="search-area-form">
+                                <form class="form-row"　action="{{ url('/search')}}", method="get">
+                                   
+
                                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
                                         <select class="select2 form-control custom-select">
-                                            <option>Search By Location</option>
-                                            <option value="AK">Alaska</option>
-                                            <option value="HI">Hawaii</option>
-                                            <option value="CA">California</option>
-                                            <option value="NV">Nevada</option>
-                                            <option value="OR">Oregon</option>
-                                            <option value="WA">Washington</option>
-                                            <option value="AZ">Arizona</option>
-                                            <option value="CO">Colorado</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="WY">Wyoming</option>
-                                            <option value="AL">Alabama</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IN">India</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="WI">Wisconsin</option>
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WV">West Virginia</option>
+                                        
                                         </select>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
-                                        <select class="select2 form-control custom-select">
-                                            <option>All Space</option>
-                                            <option value="United States">Meeting Space</option>
-                                            <option value="United Kingdom">Coworking Space</option>
-                                            <option value="Afghanistan">Office space</option>
-                                            <option value="Aland Islands">Retail Space</option>
-                                            <option value="Albania">Event Space</option>
-                                            <option value="Algeria">Virtual Office</option>
-                                        </select>
-                                    </div>
+
                                     <div class="col-xl-4 col-lg-4 col-md-2 col-sm-12 col-12">
-                                        <a href="#" class="btn btn-primary btn-lg">Search</a>
+                                        <input type="submit" name="searchbutton" value="検索" class="btn btn-primary btn-lg">
                                     </div>
+                                    
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                        <p class="hero-search-area-form-small-text">Top cities:<a href="listing-location.html"> New York</a>, <a href="listing-location.html">San Francisco</a>, <a href="listing-location.html">Los Angeles</a>, <a href="listing-location.html">Chicago</a>, <a href="listing-location.html">Houston</a></p>
+                                        <p class="hero-search-area-form-small-text">Top cities:<a href="listing-location.html"> MECE</a>
                                     </div>
                                 </form>
                             </div>
@@ -249,104 +127,42 @@
                   <!-- hero serach area close  -->
             </div>
         </div>
+        
         <div class="space-lg space-md space-xs">
             <div class="container-fluid">
                 <div class="row">
                       <!-- section heading start  -->
-                    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="section-heading text-center">
-                            <h2 class="section-heading-title">Types of office space available </h2>
-                            <p class="section-heading-text lead">Explore the different types of office space availableto rentand discover <br> which is right for your business.</p>
-                        </div>
-                    </div>
+            
                        <!-- section heading close  -->
-                </div>
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+               
                            <!-- space showcase start  -->
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-1.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Meeting space</h3>
-                            </div>
-                        </a>
+                       
                         <!-- space showcase close  -->
-                    </div>
+                  
                     <!-- space showcase start  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Coworking space</h3>
-                            </div>
-                        </a>
-                    </div>
+                   
                     <!-- space showcase close  -->
                     <!-- space showcase start  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-3.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Office space</h3>
-                            </div>
-                        </a>
-                    </div>
+                    
                     <!-- space showcase close  -->
                     <!-- space showcase start  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-4.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Retail space</h3>
-                            </div>
-                        </a>
-                    </div>
+                    
                     <!-- space showcase close  -->
                     <!-- space showcase start  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-5.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Event space</h3>
-                            </div>
-                        </a>
-                    </div>
+                   
                     <!-- space showcase close  -->
                     <!-- space showcase start  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="listing-single.html" class="space-showcase-block">
-                            <div class="space-showcase-img zoom-img">
-                                <img src="/text/images/space-img-6.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="space-showcase-content">
-                                <h3 class="space-showcase-content-title">Virtual office</h3>
-                            </div>
-                        </a>
-                    </div>
+                   
                     <!-- space showcase close  -->
                 </div>
             </div>
         </div>
+
         <div class="space-lg space-md space-xs pt-4">
             <div class="container">
                 <div class="row">
                     <!-- section heading start  -->
-                    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="section-heading text-center">
-                            <h2 class="section-heading-title">Explore our available office spaces</h2>
-                            <p class="section-heading-text lead">Etiam condimentum augue ac nunc commodo euismo aecenas vitae lectus ornare, ornare velit nec, volutpat lacus.</p>
-                        </div>
-                    </div>
+                    
                     <!-- section heading close  -->
                 </div>
                 <div class="row">
@@ -483,8 +299,8 @@
                     <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
                          <!-- section heading start  -->
                         <div class="section-heading text-center">
-                            <h2 class="section-heading-title">How it Works?</h2>
-                            <p class="section-heading-text lead">Aliquam sagittis consectetur ligulan aliquam turpis cursus at. In aliquet auguenec libero ultricies velit pellentesque.</p>
+                            <h2 class="section-heading-title">Knowledgebook</h2>
+                            <p class="section-heading-text lead"></p>
                         </div>
                            <!-- section heading close  -->
                     </div>
@@ -492,52 +308,23 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                            <!-- process block start  -->
-                        <div class="process-block">
-                            <div class="process-block-number">1</div>
-                            <div class="process-content">
-                                <div class="process-content-icon">
-                                    <img src="/text/images/location-map.png" alt="">
-                                </div>
-                                <h3 class="process-content-title">List your space</h3>
-                                <p>It takes no longer than 15 minutes to list your space on spacely. Our user friendly onboarding process! </p>
-                            </div>
-                        </div>
+                      
                            <!-- process block close  -->
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    
+                    
                            <!-- process block start  -->
-                        <div class="process-block">
-                            <div class="process-block-number">2</div>
-                            <div class="process-content">
-                                <div class="process-content-icon">
-                                    <img src="/text/images/graph-icon.png" alt="">
-                                </div>
-                                <h3 class="process-content-title">Get more orders</h3>
-                                <p>Right after you complete the onboarding process, we will publish your workspace on our marketplace. </p>
-                            </div>
-                        </div>
+           
                            <!-- process block close  -->
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+         
                            <!-- process block start  -->
-                        <div class="process-block">
-                            <div class="process-block-number">3</div>
-                            <div class="process-content">
-                                <div class="process-content-icon">
-                                    <img src="/text/images/money-icon.png" alt="">
-                                </div>
-                                <h3 class="process-content-title">Earn money</h3>
-                                <p>Orders coming from spacely are 100% prepaid. We will bring you not just leads but new clients.</p>
-                            </div>
-                        </div>
+                    
                            <!-- process block close  -->
                     </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mt-5">
-                        <a href="register-page.html" class="btn btn-outline-primary">List your space</a>
-                    </div>
+                  
                 </div>
             </div>
         </div>
+
         <div class="space-lg space-md space-xs">
             <div class="container">
                 <div class="row">
@@ -618,97 +405,11 @@
                         </div>
                     </div>
                       <!-- footer widget  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Type of spaces</h3>
-                            <div class="footer-links">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Coworking space</a></li>
-                                    <li><a href="#">Meeting space</a></li>
-                                    <li><a href="#">Office space</a></li>
-                                    <li><a href="#">Retail Space</a></li>
-                                    <li><a href="#">Event space</a></li>
-                                    <li><a href="#">Virtual Space</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                   
                       <!-- footer widget  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Company</h3>
-                            <div class="footer-links">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Clients</a></li>
-                                    <li><a href="#">Team</a> </li>
-                                    <li><a href="#">Help Center</a></li>
-                                    <li><a href="#">Press</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                       <!-- footer widget  -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Language</h3>
-                            <div class="footer-langauge">
-                                <select class="form-control" id="select2-flag-icons">
-                                      <option value="AK" data-flag="ad"> Alaska</option>
-                                        <option value="HI" data-flag="ae"> Hawaii</option>
-                                        <option value="in" data-flag="in"> India</option>
-                                        <option value="CA" data-flag="af"> California</option>
-                                        <option value="NV" data-flag="ag"> Nevada</option>
-                                        <option value="OR" data-flag="ao"> Oregon</option>
-                                        <option value="WA" data-flag="at"> Washington</option>
-                                        <option value="AZ" data-flag="gm"> Arizona</option>
-                                        <option value="CO" data-flag="az"> Colorado</option>
-                                        <option value="ID" data-flag="be"> Idaho</option>
-                                        <option value="MT" data-flag="bi"> Montana</option>
-                                        <option value="NE" data-flag="bn"> Nebraska</option>
-                                        <option value="NM" data-flag="aw"> New Mexico</option>
-                                        <option value="ND" data-flag="bj"> North Dakota</option>
-                                        <option value="UT" data-flag="bh"> Utah</option>
-                                        <option value="WY" data-flag="bm"> Wyoming</option>
-                                        <option value="AL" data-flag="br"> Alabama</option>
-                                        <option value="AR" data-flag="bs"> Arkansas</option>
-                                        <option value="IL" data-flag="au"> Illinois</option>
-                                        <option value="IA" data-flag="ba"> Iowa</option>
-                                        <option value="KS" data-flag="bt"> Kansas</option>
-                                        <option value="KY" data-flag="bq"> Kentucky</option>
-                                        <option value="LA" data-flag="ci"> Louisiana</option>
-                                        <option value="MN" data-flag="cn"> Minnesota</option>
-                                        <option value="MS" data-flag="cz"> Mississippi</option>
-                                        <option value="MO" data-flag="ec"> Missouri</option>
-                                        <option value="OK" data-flag="dk"> Oklahoma</option>
-                                        <option value="SD" data-flag="cz"> South Dakota</option>
-                                        <option value="TX" data-flag="ee"> Texas</option>
-                                        <option value="TN" data-flag="cl"> Tennessee</option>
-                                        <option value="WI" data-flag="cf"> Wisconsin</option>
-                                        <option value="CT" data-flag="co"> Connecticut</option>
-                                        <option value="DE" data-flag="cy"> Delaware</option>
-                                        <option value="FL" data-flag="cu"> Florida</option>
-                                        <option value="GA" data-flag="cn"> Georgia</option>
-                                        <option value="IN" data-flag="cz"> Indiana</option>
-                                        <option value="ME" data-flag="dm"> Maine</option>
-                                        <option value="MD" data-flag="ec"> Maryland</option>
-                                        <option value="MA" data-flag="cw"> Massachusetts</option>
-                                        <option value="MI" data-flag="ee"> Michigan</option>
-                                        <option value="NH" data-flag="hm"> New Hampshire</option>
-                                        <option value="NJ" data-flag="gu"> New Jersey</option>
-                                        <option value="NY" data-flag="hr"> New York</option>
-                                        <option value="NC" data-flag="gr"> North Carolina</option>
-                                        <option value="OH" data-flag="hn"> Ohio</option>
-                                        <option value="PA" data-flag="hk"> Pennsylvania</option>
-                                        <option value="RI" data-flag="ht"> Rhode Island</option>
-                                        <option value="SC" data-flag="hu"> South Carolina</option>
-                                        <option value="VT" data-flag="il"> Vermont</option>
-                                        <option value="VA" data-flag="im"> Virginia</option>
-                                        <option value="WV" data-flag="gi"> West Virginia</option>
-                                </select>
-                            </div>
-                        </div>
+                    
                           <!-- footer widget  -->
                     </div>
                 </div>
@@ -737,7 +438,9 @@
         </div>
          <!-- footer section close -->
     </div>
+
        <!-- Modal -->
+
     <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="loginmodalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

@@ -7,17 +7,19 @@
   </head>
 
   <body>
-
+  
     <h1>検索結果</h1>
 
-    @foreach ($frameworklist as $list)
+
       <li>
-        <a href="/framework/detail?id={{ $list->id }}">
+      @foreach ($query  as $list)
+        <a href="/framework/detail?id={{ $list->id}}">
           {{ $list->name }}          
         </a>
+      @endforeach
       </li>
-    </form>
-    @endforeach
+   
+   
 
     <p>常設エリア</p>
 
