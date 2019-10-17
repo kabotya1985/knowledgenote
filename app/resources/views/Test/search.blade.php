@@ -16,12 +16,13 @@
 </head>
 
 <body>
-      <div class="preloader">
+<div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
         </div>
     </div>
+
     <div class="main-wrapper">
         <!-- header start -->
         <div class="header-classic">
@@ -30,159 +31,44 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <nav class="navbar navbar-expand-lg navbar-classic">
-                            <a class="navbar-brand" href="index.html"> <img src="/assets/images/logo.png" alt=""></a>
+                            <a class="navbar-brand" href="/index"> <img src="/assets/images/logo.png" alt=""></a>
                             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-classic" aria-controls="navbar-classic" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar top-bar mt-0"></span>
                                 <span class="icon-bar middle-bar"></span>
                                 <span class="icon-bar bottom-bar"></span>
                             </button>
+                            
                             <div class="collapse navbar-collapse" id="navbar-classic">
                                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Homepage
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-1">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="index.html">
-                                                    Homepage One</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="index-2.html">
-                                                    Homepage Two</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/index">Homepage</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Listing
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-2">
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-grid-view.html">
-                                                    Listing List + Grid</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-list-view.html">
-                                                    Listing List View</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="listing-map-view.html">
-                                                    Listing Map View</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="listing-with-map.html">
-                                                    Listing with half Map</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-location.html">
-                                                    Listing Location</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-categories.html">
-                                                    Listing Category</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-single.html">
-                                                    Listing Single</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/framework/form">framework作成</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-3">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="about.html">
-                                                    About us</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="pricing.html">
-                                                    Pricing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="register-page.html">
-                                                    Register</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="login-page.html">
-                                                    Login</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="inquiry-form.html">
-                                                    Inquiry Form</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="forget-password-page.html">
-                                                    Forgot Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="reset-password-page.html">
-                                                    Reset Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="error-page.html">
-                                                    404 Error</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="contact.html">
-                                                    Contact</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/member">member</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-4">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog.html">
-                                                    Blog List</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-thumbnail.html">
-                                                    Blog Thumbnail</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-single.html">
-                                                    Blog Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./docs/index.html">
-                                            Docs
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="dashboard-overview.html">
-                                            Dashboard
-                                        </a>
-                                    </li>
+
                                 </ul>
+
                                 <div class="header-btn d-xl-block d-lg-none">
-                                     <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">Login</a>
-                                    <a href="inquiry-form.html" class="btn btn-primary"><i class="fas fa-plus"></i>List a space</a>
+                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">
+                                        Login
+                                    </a>
                                 </div>
+
                             </div>
                         </nav>
                     </div>
                 </div>
-            </div>
-            <!-- navigation close -->
-        </div>
+            </div>   
         <!-- header close -->
         <!-- pageheader start  -->
-     <div class="pageheader">
-    <div class="container">
-
-
-
-                <div class="row">
-                    <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="pageheader-caption">
-                            <h1 class="pageheader-caption-title">Lisitng Categories</h1>
-                            <p class="pageheader-caption-text">Change your layout in grid and list view example using bootstrap 4. Design elements using Bootstrap, javascript, css, and html.... </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  
         <!-- pageheader close  -->
         <div class="container">
             <div class="row">
@@ -206,18 +92,30 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <!-- listing block start -->
                         <div class="listing-block">
+
                             <div class="listing-img">
                                 <a href="#"> <img src="/assets/images/listing-img-1.jpg" alt="" class="img-fluid"></a>
-                                <div class="listing-badge">Featured</div>
+                                <div class="listing-badge">注目</div>
                                 <a href="#" class="listing-category-badge badge-light-brose">
                                     Office Space
                                 </a>
+
                                 <div class="like-icon"></div>
+
                             </div>
+
                             <div class="listing-content">
                                 <div class="listing-content-head">
-                                    <h3 class="listing-content-head-title"> <a href="#">Heading for Office Space Title</a></h3>
-                                    <p class="listing-content-head-text">Ahmedabad, Gujarat, India</p>
+                                    <h3 class="listing-content-head-title"> 
+                                    
+                                    @foreach ($query  as $list)
+                                    <a href="/framework/detail?id={{ $list->id}}">
+                                    {{ $list->name }}          
+                                    </a>
+                                    @endforeach
+                                
+                                    </h3>  
+
                                 </div>
                                 <div class="review-content-rating">
                                     <span class="star"></span>

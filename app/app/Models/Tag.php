@@ -4,15 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Framework extends Model
+class Tag extends Model
 {
-    protected $table = 'framework';
-    protected $fillable = ['id','framework','description','URL'];
+    protected $table = 'tag';
+    protected $fillable = ['id','tag'];
     protected $hidden = [];
     protected $casts = [];
     protected $dates = [];
 
-    public function tag()
+    public function framework()
     {
         return $this->belongsToMany('App\Models\Tag');
     }

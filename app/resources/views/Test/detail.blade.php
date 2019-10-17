@@ -26,6 +26,7 @@
             <div class="lds-pos"></div>
         </div>
     </div>
+
     <div class="main-wrapper">
         <!-- header start -->
         <div class="header-classic">
@@ -34,152 +35,46 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <nav class="navbar navbar-expand-lg navbar-classic">
-                            <a class="navbar-brand" href="index.html"> <img src="/assets/images/logo.png" alt=""></a>
+                            <a class="navbar-brand" href="/index"> <img src="/assets/images/logo.png" alt=""></a>
                             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-classic" aria-controls="navbar-classic" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar top-bar mt-0"></span>
                                 <span class="icon-bar middle-bar"></span>
                                 <span class="icon-bar bottom-bar"></span>
                             </button>
+                            
                             <div class="collapse navbar-collapse" id="navbar-classic">
                                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Homepage
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-1">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="index.html">
-                                                    Homepage One</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="index-2.html">
-                                                    Homepage Two</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/index">Homepage</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Listing
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-2">
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-grid-view.html">
-                                                    Listing List + Grid</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-list-view.html">
-                                                    Listing List View</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="listing-map-view.html">
-                                                    Listing Map View</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="listing-with-map.html">
-                                                    Listing with half Map</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-location.html">
-                                                    Listing Location</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-categories.html">
-                                                    Listing Category</a>
-                                            </li>
-                                            <li class="dropdown-item"><a class="dropdown-link" href="listing-single.html">
-                                                    Listing Single</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/framework/form">framework作成</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-3">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="about.html">
-                                                    About us</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="pricing.html">
-                                                    Pricing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="register-page.html">
-                                                    Register</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="login-page.html">
-                                                    Login</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="inquiry-form.html">
-                                                    Inquiry Form</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="forget-password-page.html">
-                                                    Forgot Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="reset-password-page.html">
-                                                    Reset Password</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="error-page.html">
-                                                    404 Error</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="contact.html">
-                                                    Contact</a>
-                                            </li>
-                                        </ul>
+
+                                    <li>
+                                    <a class="nav-link" href="/member">member</a>       
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="menu-4">
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog.html">
-                                                    Blog List</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-thumbnail.html">
-                                                    Blog Thumbnail</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="dropdown-link" href="blog-single.html">
-                                                    Blog Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./docs/index.html">
-                                            Docs
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="dashboard-overview.html">
-                                            Dashboard
-                                        </a>
-                                    </li>
+
                                 </ul>
+
                                 <div class="header-btn d-xl-block d-lg-none">
-                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">Login</a>
-                                    <a href="inquiry-form.html" class="btn btn-primary"><i class="fas fa-plus"></i>List a space</a>
+                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">
+                                        Login
+                                    </a>
                                 </div>
+
                             </div>
                         </nav>
                     </div>
                 </div>
-            </div>
+            </div>   
             <!-- navigation close -->
         </div>
         <!-- header close -->
         <!-- listing slider start -->
-        <div class="listing-slider-section">
-            <div class="listing-slider">
-                <div class="item"><img src="/assets/images/listing-slider-img-1.jpg" alt=""></div>
-                <div class="item"><img src="/assets/images/listing-slider-img-2.jpg" alt=""></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
                         <!-- listing badges start -->
                         <div class="listing-badges">
                             <div class="badge badge-success badge-pill"><i class="fas fa-award mr-2"></i>Verified Space</div>
@@ -197,31 +92,7 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- listing nav start -->
-                    <div class="listing-nav sticky">
-                        <ul>
-                            <li>
-                                <a class="page-scroll" href="#overview">Overview </a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#about">About</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#amenities">Amenities</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#video">Video</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#review">Reviews</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#location">Location</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#similarspace">Similar Space</a>
-                            </li>
-                        </ul>
-                    </div>
+                   
                     <!-- listing nav close -->
                 </div>
             </div>
@@ -279,19 +150,7 @@
                         </div>
                         <!-- listing detail close -->
                         <!-- listing detail start -->
-                        <div class="listing-detail-card amenities" id="amenities">
-                            <h4 class="listing-detail-card-title">Amenities</h4>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">WiFi</li>
-                                <li class="list-inline-item">Parking</li>
-                                <li class="list-inline-item">24/7 access</li>
-                                <li class="list-inline-item">Kitchen</li>
-                                <li class="list-inline-item">Phone</li>
-                                <li class="list-inline-item">Receptionist</li>
-                                <li class="list-inline-item">Scan</li>
-                                <li class="list-inline-item">Tea & coffee</li>
-                            </ul>
-                        </div>
+                      
                         <!-- listing detail close -->
                         <!-- listing detail start -->
                         <div class="listing-detail-card video" id="video">
@@ -300,10 +159,10 @@
                                 <div class="video-thumbnail"><img src="/assets/images/video-play-img.jpg" alt="" class="img-fluid"></div>
                                 <div class="video">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=-PViKTC9WLY" allowfullscreen></iframe>
                                     </div>
                                 </div>
-                                <a href="#" class="video-play"></a>
+                                <a href="" class="video-play"></a>
                             </div>
                         </div>
                         <!-- listing detail close -->
@@ -382,29 +241,17 @@
                         </div>
                         <!-- listing detail close -->
                         <!-- listing detail start -->
-                        <div class="listing-detail-card listing-location " id="location">
-                            <h4 class="listing-detail-card-title mb-1">Location</h4>
-                            <p>26, Deccan Gymkhana, Ludhiana - 369227</p>
-                            <div id="listing-map"></div>
-                        </div>
+                     
                         <!-- listing detail close -->
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
+               
                         <!-- listing detail start -->
-                        <div class="listing-sidebar">
+ 
                             <!-- listing widget start -->
-                            <div class="listing-sidebar-widget">
-                                <div class="listing-sidebar-widget-content widget-price">
-                                    <p class="widget-price-value">$ 2,550 <span class="widget-price-month">/Month</span></p>
-                                </div>
-                            </div>
+                 
                             <!-- listing widget close -->
                             <!-- listing widget start -->
                             <div class="listing-sidebar-widget">
-                                <h3 class="listing-widget-title">Booking Availability</h3>
-                                <div class="listing-sidebar-widget-content">
-                                    <div id="datepicker-inline"></div>
-                                    <a href="#" class="btn btn-primary btn-block">Request to book</a>
+                     
                                 </div>
                             </div>
                             <!-- listing widget close -->
@@ -435,170 +282,19 @@
                             </div>
                             <!-- listing widget close -->
                             <!-- listing siebar form -->
-                            <div class="listing-sidebar-widget">
-                                <h3 class="listing-widget-title">Request Quote</h3>
-                                <div class="listing-sidebar-widget-content quote-form">
-                                    <form class="form-row">
-                                        <div class="form-group col-12">
-                                            <label for="quotetitle">Name<span class="require-mark">*</span></label>
-                                            <input type="text" name="name" class="form-control" id="quotetitle" aria-describedby="quotename" placeholder="John Deo" required="">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="quoteemail">Email<span class="require-mark">*</span></label>
-                                            <input type="email" name="email" class="form-control" id="quoteemail" aria-describedby="quoteemail" placeholder="Enter email" required="">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="quotephone">Phone<span class="require-mark">*</span></label>
-                                            <input type="tel" name="phone" class="form-control" id="quotephone" aria-describedby="quotephone" placeholder="+91" required="">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="datepicker">Availability<span class="require-mark">*</span></label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="datepicker" placeholder="mm/dd/yyyy">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="quotedescription">Message to Host</label>
-                                            <textarea class="form-control" id="quotedescription" rows="4" placeholder="Write short message to host"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-block">Send Request Quote</button>
-                                    </form>
-                                </div>
-                            </div>
+                         
                             <!-- listing siebar form -->
-                        </div>
+                        
                         <!-- listing detail close -->
-                    </div>
-                </div>
-            </div>
-            <div class="space-lg space-md space-xs" id="similarspace">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
-                            <h2>Discover similar spaces you’ll love.</h2>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <!-- listing block start -->
-                            <div class="listing-block">
-                                <div class="listing-img">
-                                    <a href="#"> <img src="/assets/images/listing-img-1.jpg" alt="" class="img-fluid"></a>
-                                    <div class="listing-badge">Featured</div>
-                                    <a href="#" class="listing-category-badge badge-light-brose">
-                                        Office Space
-                                    </a>
-                                    <div class="like-icon"></div>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-head">
-                                        <h3 class="listing-content-head-title"> <a href="#">Heading for Office Space Title</a></h3>
-                                        <p class="listing-content-head-text">Ahmedabad, Gujarat, India</p>
-                                    </div>
-                                    <div class="review-content-rating">
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star empty"></span>
-                                        <a href="#" class="rating-review">4.0</a>
-                                    </div>
-                                    <div class="listing-content-meta">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Monthly</span> <br> <span class="value">$2250</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">People</span> <br> <span class="value">12</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Sq.Ft</span> <br> <span class="value">1200</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                 
                             <!-- listing block close -->
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                        
                             <!-- listing block start -->
-                            <div class="listing-block">
-                                <div class="listing-img">
-                                    <a href="#"> <img src="/assets/images/listing-img-2.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#" class="listing-category-badge badge-light-orange">
-                                        Meeting Space
-                                    </a>
-                                    <div class="like-icon"></div>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-head">
-                                        <h3 class="listing-content-head-title"> <a href="#">Meeting Office Space Title</a></h3>
-                                        <p class="listing-content-head-text">Surat, Gujarat, India</p>
-                                    </div>
-                                    <div class="review-content-rating">
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star empty"></span>
-                                        <span class="star empty"></span>
-                                        <a href="#" class="rating-review">5.0</a>
-                                    </div>
-                                    <div class="listing-content-meta">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Hourly</span> <br> <span class="value">$50</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">People</span> <br> <span class="value">3</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Sq.Ft</span> <br> <span class="value">360</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <!-- listing block close -->
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                        
                             <!-- listing block start -->
-                            <div class="listing-block">
-                                <div class="listing-img">
-                                    <a href="#"> <img src="/assets/images/listing-img-3.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#" class="listing-category-badge badge-light-purple">
-                                        Coworking Space
-                                    </a>
-                                    <div class="like-icon"></div>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-head">
-                                        <h3 class="listing-content-head-title"> <a href="#">Coworking Office Space Title</a></h3>
-                                        <p class="listing-content-head-text">Vadodara, Gujarat, India</p>
-                                    </div>
-                                    <div class="review-content-rating">
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star"></span>
-                                        <span class="star half"></span>
-                                        <span class="star empty"></span>
-                                        <a href="#" class="rating-review">4.5</a>
-                                    </div>
-                                    <div class="listing-content-meta">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Weekly</span> <br> <span class="value">$250</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">People</span> <br> <span class="value">24</span>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                <span class="lable">Sq.Ft</span> <br> <span class="value">2200</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!-- listing block close -->
                         </div>
                     </div>
@@ -611,12 +307,14 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                         <!-- footer widget  -->
-                        <div class="footer-widget">
-                            <div class="brand-logo"><img src="/assets/images/primary-white-logo.png" alt=""></div>
-                            <p class="footer-widget-text">Welcome to the largest office space marketplace in the world. This is your one-stop shop for renting coworking space, serviced offices, shared office space and virtual offices in World. </p>
+                        
+                    <!-- footer widget  -->
+                    <div class="footer-widget">
+                            <div class="brand-logo"><img src="/text/images/primary-white-logo.png" alt=""></div>
+                            <p class="footer-widget-text">詳細</p>
                             <div class="footer-location">
-                                <p class="phone-numbers">1800 123 345 789</p>
-                                <p class="address">3 Doris St, North Sydney, NSW 2060</p>
+                                <p class="phone-numbers">000-0000-0000</p>
+                                <p class="mail">tosi1985@gmail.com</p>
                             </div>
                             <div class="social-media">
                                 <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -628,97 +326,9 @@
                         </div>
                     </div>
                     <!-- footer widget  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Type of spaces</h3>
-                            <div class="footer-links">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Coworking space</a></li>
-                                    <li><a href="#">Meeting space</a></li>
-                                    <li><a href="#">Office space</a></li>
-                                    <li><a href="#">Retail Space</a></li>
-                                    <li><a href="#">Event space</a></li>
-                                    <li><a href="#">Virtual Space</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                 
                     <!-- footer widget  -->
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Company</h3>
-                            <div class="footer-links">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Clients</a></li>
-                                    <li><a href="#">Team</a> </li>
-                                    <li><a href="#">Help Center</a></li>
-                                    <li><a href="#">Press</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- footer widget  -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Language</h3>
-                            <div class="footer-langauge">
-                                <select class="form-control" id="select2-flag-icons">
-                                    <option value="AK" data-flag="ad"> Alaska</option>
-                                    <option value="HI" data-flag="ae"> Hawaii</option>
-                                    <option value="in" data-flag="in"> India</option>
-                                    <option value="CA" data-flag="af"> California</option>
-                                    <option value="NV" data-flag="ag"> Nevada</option>
-                                    <option value="OR" data-flag="ao"> Oregon</option>
-                                    <option value="WA" data-flag="at"> Washington</option>
-                                    <option value="AZ" data-flag="gm"> Arizona</option>
-                                    <option value="CO" data-flag="az"> Colorado</option>
-                                    <option value="ID" data-flag="be"> Idaho</option>
-                                    <option value="MT" data-flag="bi"> Montana</option>
-                                    <option value="NE" data-flag="bn"> Nebraska</option>
-                                    <option value="NM" data-flag="aw"> New Mexico</option>
-                                    <option value="ND" data-flag="bj"> North Dakota</option>
-                                    <option value="UT" data-flag="bh"> Utah</option>
-                                    <option value="WY" data-flag="bm"> Wyoming</option>
-                                    <option value="AL" data-flag="br"> Alabama</option>
-                                    <option value="AR" data-flag="bs"> Arkansas</option>
-                                    <option value="IL" data-flag="au"> Illinois</option>
-                                    <option value="IA" data-flag="ba"> Iowa</option>
-                                    <option value="KS" data-flag="bt"> Kansas</option>
-                                    <option value="KY" data-flag="bq"> Kentucky</option>
-                                    <option value="LA" data-flag="ci"> Louisiana</option>
-                                    <option value="MN" data-flag="cn"> Minnesota</option>
-                                    <option value="MS" data-flag="cz"> Mississippi</option>
-                                    <option value="MO" data-flag="ec"> Missouri</option>
-                                    <option value="OK" data-flag="dk"> Oklahoma</option>
-                                    <option value="SD" data-flag="cz"> South Dakota</option>
-                                    <option value="TX" data-flag="ee"> Texas</option>
-                                    <option value="TN" data-flag="cl"> Tennessee</option>
-                                    <option value="WI" data-flag="cf"> Wisconsin</option>
-                                    <option value="CT" data-flag="co"> Connecticut</option>
-                                    <option value="DE" data-flag="cy"> Delaware</option>
-                                    <option value="FL" data-flag="cu"> Florida</option>
-                                    <option value="GA" data-flag="cn"> Georgia</option>
-                                    <option value="IN" data-flag="cz"> Indiana</option>
-                                    <option value="ME" data-flag="dm"> Maine</option>
-                                    <option value="MD" data-flag="ec"> Maryland</option>
-                                    <option value="MA" data-flag="cw"> Massachusetts</option>
-                                    <option value="MI" data-flag="ee"> Michigan</option>
-                                    <option value="NH" data-flag="hm"> New Hampshire</option>
-                                    <option value="NJ" data-flag="gu"> New Jersey</option>
-                                    <option value="NY" data-flag="hr"> New York</option>
-                                    <option value="NC" data-flag="gr"> North Carolina</option>
-                                    <option value="OH" data-flag="hn"> Ohio</option>
-                                    <option value="PA" data-flag="hk"> Pennsylvania</option>
-                                    <option value="RI" data-flag="ht"> Rhode Island</option>
-                                    <option value="SC" data-flag="hu"> South Carolina</option>
-                                    <option value="VT" data-flag="il"> Vermont</option>
-                                    <option value="VA" data-flag="im"> Virginia</option>
-                                    <option value="WV" data-flag="gi"> West Virginia</option>
-                                </select>
-                            </div>
-                        </div>
+                   
                         <!-- footer widget  -->
                     </div>
                 </div>

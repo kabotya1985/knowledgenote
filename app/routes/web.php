@@ -20,7 +20,7 @@ Route::get('/', function ()  { return view('Welcome'); });
 
 { Route::get('test/form', 'TestController@form'); };
 
-{ Route::get('test/confilm', 'TestController@confilm'); };
+{ Route::get('test/confirm', 'TestController@confilm'); };
 
 { Route::get('test/done', 'TestController@done'); };
 

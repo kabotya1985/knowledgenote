@@ -134,6 +134,7 @@
             <!-- navigation close -->
             <!-- header close -->
         </div>
+
         <div class="db-content">
             <div class="container-fluid">
                 <div class="row">
@@ -171,14 +172,16 @@
                         </nav>
                         <!-- navbar sidebar close  -->
                     </div>
+
                     <div class="col-xl-10 col-lg-9 col-md-12 col-sm-12 col-12">
+                      <form action="{{ url('/framework/confirm')}}" method="post"> 
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <!-- pageheader start  -->
                                 <div class="db-pageheader d-flex justify-content-between">
                                     <div class="">
                                         <h2 class="db-pageheader-title">あなたのナレッジを投稿する</h2>
-                                        <p class="db-pageheader-text"> Add your new listing for office space.</p>
+                                        <p class="db-pageheader-text"></p>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <a href="dashboard-listing.html" class="btn btn-primary">Back to listing</a>
@@ -187,22 +190,11 @@
                                 <!-- pageheader close  -->
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <!-- card header  -->
-                                <div class="db-card listing-category">
-                                    <div class="db-card-header">
-                                        <h3 class="db-card-header-title">Select Category</h3>
-                                    </div>
-                                    <div class="db-card-body">
-                                        <select class="select2 form-control" id="category">
-                                            <option selected>Select Your Category</option>
-                                            <option value="1">Office Space </option>
-                                            <option value="2">Retail Space</option>
-                                            <option value="3">Meeting Space</option>
-                                        </select>
-                                    </div>
-                                </div>
+            
                                 <!-- card header  -->
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -257,135 +249,46 @@
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <!-- listing form price start  -->
-                                <div class="db-card listing-price">
-                                    <div class="db-card-header">
-                                        <h3 class="db-card-header-title">Listing Price</h3>
-                                        <div class="db-card-body">
-                                            <form>
-                                                <div class="form-group ">
-                                                    <label for="type">Select Type</label>
-                                                    <select class="select form-control" id="type">
-                                                        <option selected>Hourly</option>
-                                                        <option value="1">Monthly</option>
-                                                        <option value="2">Daily</option>
-                                                        <option value="3">Yearly</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="address">Price</label>
-                                                    <input type="text" class="form-control" id="address" placeholder="$20" required="">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <!-- listing form price close  -->
+                               
+                                <!-- listing form price close  -->
                                 </div>
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
                                 <!-- listing form desc start  -->
                                 <div class="db-card listing-description">
                                     <div class="db-card-header">
                                         <h3 class="db-card-header-title">Listing Descriptions</h3>
                                     </div>
                                     <div class="db-card-body">
-                                        <textarea class="editor-textarea">Next, use our Get Started docs to setup Tiny!</textarea>
+                                        <textarea class="editor-textarea"name="post" value="{{old('post')}}" placeholder="投稿内容を入力">
+                                         
+                                            <br>
+                                            @if($errors->has('post'))
+                                                <div class="invalid-feedback">
+                                                    <strong>
+                                                        {{ $errors->first('post') }}
+                                                    </strong>
+                                                </div>
+                                            @endif
+                                        </textarea>
                                     </div>
                                 </div>
                                 <!-- listing form desc close  -->
+
                             </div>
+                            
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="db-card listing-amenities">
                                     <div class="db-card-header">
                                         <h3 class="db-card-header-title">Listing Amenities</h3>
                                     </div>
                                     <!-- listing amenitiers start  -->
-                                    <div class="db-card-body">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck19">
-                                                    <label class="custom-control-label" for="customCheck19">Furnished</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck20">
-                                                    <label class="custom-control-label" for="customCheck20">24/7 Access</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck21">
-                                                    <label class="custom-control-label" for="customCheck21">Accessibility</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck22">
-                                                    <label class="custom-control-label" for="customCheck22">Bike Rack</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck36">
-                                                    <label class="custom-control-label" for="customCheck36">Storage</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck23">
-                                                    <label class="custom-control-label" for="customCheck23">Coffee/Tea</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck24">
-                                                    <label class="custom-control-label" for="customCheck24">Door w/Lock</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck25">
-                                                    <label class="custom-control-label" for="customCheck25">Kitchen</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck26">
-                                                    <label class="custom-control-label" for="customCheck26">Mailbox Services</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck37">
-                                                    <label class="custom-control-label" for="customCheck37">Window View</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck27">
-                                                    <label class="custom-control-label" for="customCheck27">Meeting Rooms</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck28">
-                                                    <label class="custom-control-label" for="customCheck28">Print/Scan/Copy</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck29">
-                                                    <label class="custom-control-label" for="customCheck29">WiFi Phone</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck30">
-                                                    <label class="custom-control-label" for="customCheck30">Parking</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck31">
-                                                    <label class="custom-control-label" for="customCheck31">Catering</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck32">
-                                                    <label class="custom-control-label" for="customCheck32">Hosted Reception</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck34">
-                                                    <label class="custom-control-label" for="customCheck34">On-site Restaurant</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck35">
-                                                    <label class="custom-control-label" for="customCheck35">Pet Friendly</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <!-- listing amenities close  -->
                                 </div>
                             </div>
+
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="db-card listing-photo">
                                     <div class="db-card-header">
@@ -401,68 +304,7 @@
                                         </div>
                                         <!-- listing dropzone close  -->
                                         <!-- listing photo start  -->
-                                        <div class="row">
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
-                                                <div class="listing-photo-upload">
-                                                    <img src="/assets/images/listing-photo-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <!-- listing photo close  -->
                                     </div>
                                 </div>
@@ -484,10 +326,12 @@
                                     <!-- listing video close  -->
                                 </div>
                             </div>
+
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <button type="submit" class="btn btn-primary">Submit Listing</button>
                             </div>
                         </div>
+                  </form>         
                     </div>
                 </div>
             </div>

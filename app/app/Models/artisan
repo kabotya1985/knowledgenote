@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Framework_id extends Model
+{
+    protected $table = 'framework_id';
+    protected $fillable = ['id','name','descripstion','URL'];
+    protected $hidden = [];
+    protected $casts = [];
+    protected $dates = [];
+
+}
