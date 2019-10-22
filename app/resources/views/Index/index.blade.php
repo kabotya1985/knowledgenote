@@ -77,27 +77,7 @@
             <div class="hero-slider-section">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="hero-slider">
-                                 <!-- hero slider item start  -->
-                            <div class="hero-slider-item">
-                                <img src="/assets/images/hero-slide-img-1.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="hero-slider-item">
-                                <img src="/assets/images/hero-slide-img-2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="hero-slider-item">
-                                <img src="/assets/images/hero-slide-img-3.jpg" alt="" class="img-fluid">
-                            </div>
-                            <!-- hero slider item close  -->
-                        </div>
-                    </div>
-                </div>
-                <!-- hero serach area start  -->
-                <div class="hero-search-area">
-                    <div class="row">
-                        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                            <div class="hero-search-area-caption">
+                    <div class="hero-search-area-caption">
                                 <h1 class="hero-search-area-caption-title">frameworkを探す</h1>
                             </div>
 
@@ -113,6 +93,15 @@
                                     </div>
                                 </form>
                             </div>
+                            
+                    </div>
+                </div>
+                <!-- hero serach area start  -->
+                <div class="hero-search-area">
+                    <div class="row">
+                        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                            
                         </div>
                     </div>
                 </div>

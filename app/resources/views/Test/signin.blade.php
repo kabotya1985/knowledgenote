@@ -176,7 +176,7 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="pageheader-caption">
-                            <h1 class="pageheader-caption-title">Login Form</h1>
+                            <h1 class="pageheader-caption-title">Signin Form</h1>
                             <p class="pageheader-caption-text">Bootstrap Login Examples. Nunc varius nibh nisl, ut rhoncus quam efficitur quis. Donec viverra tellus antonvallis eu. </p>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Login</li>
+                                <li class="breadcrumb-item active">signin</li>
                             </ol>
                         </nav>
                     </div>
@@ -207,7 +207,7 @@
                         <!-- login form start -->
                         <div class="login-form">
                             <div class="login-form-body">
-                                <h4 class="login-form-title">Login</h4>
+                                <h4 class="login-form-title">signin</h4>
                                 <form>
                                     <div class="form-group">
                                         <label for="email">Email</label>

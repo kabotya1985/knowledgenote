@@ -76,12 +76,7 @@
         <!-- listing slider start -->
 
                         <!-- listing badges start -->
-                        <div class="listing-badges">
-                            <div class="badge badge-success badge-pill"><i class="fas fa-award mr-2"></i>Verified Space</div>
-                            <div class="like-button">
-                                <div class="like-icon"></div>
-                            </div>
-                        </div>
+              
                         <!-- listing badges close -->
                     </div>
                 </div>

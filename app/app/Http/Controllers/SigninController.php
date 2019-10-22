@@ -10,7 +10,7 @@ class SigninController extends Controller
   public function form()
   {
     $frameworks = Framework::all();
-    return view('index',['frameworklist'=>$frameworks]);
+    return view('signin/form',['frameworklist'=>$frameworks]);
   }
 
 }

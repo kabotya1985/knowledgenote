@@ -19,14 +19,25 @@ class FrameworkController extends Controller
       $data = Framework::find($id);
      
       return view('framework/detail',['data'=>$data]);
+
   }
 
   public function form(FrameworkRequest $request)
   {
-    $id = $request -> get("id");
-    $data = Framework::find($id);
-    return view('framework/form',['data'=>$data]);
+    if(!empty($id))
+    {
+      $id = $request -> get("id");
+      $data = Framework::find($id);
+    }
+    else
+    {
+      $id = 1;
+      $data = Framework::find($id);       
+    }
+        
+    return view('framework/form',['data'=>$data]); 
   }
+
   
 
   public function confirm(FrameworkRequest $request)

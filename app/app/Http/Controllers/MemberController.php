@@ -9,8 +9,8 @@ class MemberController extends Controller
 
   public function index()
   {
-    $frameworks = Framework::all();
-    return view('index',['frameworklist'=>$frameworks]);
+    $framework = Framework::all();
+    return view('member/index');
   }
 
   public function edit()
