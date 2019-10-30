@@ -55,18 +55,21 @@ Route::get('/', function ()  { return view('Welcome'); });
 
 { Route::get('member/edit', 'MemberController@edit'); };
 
-{ Route::get('signup/form', 'SignupController@form'); };
+{ Route::get('signin/form', 'Auth\SigninController@form')->name('home'); };
+{ Route::post('signin/form', 'Auth\SigninController@form')->name('home'); };
 
-{ Route::get('signin/form/register', 'Auth\RegisterController@showRegistrationForm')->name('register'); };
-{ Route::post('signin/form/register', 'Auth\RegisterController@register'); };
+{ Route::get('signup/form', 'SignupController@form'); };
 
 { Route::post('signup/confirm', 'SignupController@confirm'); };
 
 { Route::post('signup/done', 'SignupController@done'); };
 
-{ Route::get('signin/form', 'SigninController@form'); };
+
 
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//{ Route::get('login', 'Auth\RegisterController@showRegistrationForm')->name('register'); };
+//{ Route::post('login', 'Auth\RegisterController@register'); };
 
