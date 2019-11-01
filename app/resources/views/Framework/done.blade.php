@@ -59,9 +59,9 @@
 
                                 </ul>
 
-                                <div class="header-btn d-xl-block d-lg-none">
-                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">
-                                        Login
+                                
+                                    <a class="nav-link" href="/signin/form">
+                                        signin
                                     </a>
                                 </div>
 
@@ -69,7 +69,7 @@
                         </nav>
                     </div>
                 </div>
-            </div>   
+            </div>
             <!-- navigation close -->
         </div>
         <!-- header close -->

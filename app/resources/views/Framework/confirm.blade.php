@@ -31,6 +31,8 @@
         <!-- header start -->
         <div class="header-classic">
             <!-- navigation start -->
+            <div class="header-classic">
+            <!-- navigation start -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -59,9 +61,9 @@
 
                                 </ul>
 
-                                <div class="header-btn d-xl-block d-lg-none">
-                                    <a href="login-page.html" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginmodal">
-                                        Login
+                                
+                                    <a class="nav-link" href="/signin/form">
+                                        signin
                                     </a>
                                 </div>
 
@@ -69,7 +71,7 @@
                         </nav>
                     </div>
                 </div>
-            </div>   
+            </div>
             <!-- navigation close -->
         </div>
         <!-- header close -->
