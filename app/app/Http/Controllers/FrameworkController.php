@@ -11,8 +11,14 @@ use App\Http\Requests\FrameworkRequest;
 use App\Http\Requests\PostRequest;
 
 
+
 class FrameworkController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
+  
   public function detail(request $request)
   {
       $id = $request -> get("id");

@@ -29,6 +29,14 @@ class signinController extends Controller
      *
      * @var string
      */
+
+    public function handle($request, Closure $next, $guard = null)
+    {
+      if (Auth::guard($guard)->check()) {
+        return redirect()->intended('/');
+      }
+      return $next($request);
+    }
     protected function redirectTo()
       {
         return URL::previous();

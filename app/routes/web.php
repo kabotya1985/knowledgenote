@@ -66,10 +66,10 @@ Route::get('/', function ()  { return view('Welcome'); });
 
 
 
-//Auth::routes();
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//{ Route::get('login', 'Auth\RegisterController@showRegistrationForm')->name('register'); };
-//{ Route::post('login', 'Auth\RegisterController@register'); };
+{ Route::get('login', 'Auth\RegisterController@showRegistrationForm')->name('register'); };
+{ Route::post('login', 'Auth\RegisterController@register'); };
 
