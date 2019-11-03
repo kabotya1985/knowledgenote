@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+    use AuthenticatesUsers;
 
 class LoginController extends Controller
 {
@@ -18,7 +19,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+
 
     /**
      * Where to redirect users after login.
@@ -36,4 +37,16 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function handle($request, Closure $next, $guard = null)
+    {
+      if (Auth::guard($guard)->check()) {
+        return redirect()->intended('/');
+      }
+      return $next($request);
+    }
+    protected function redirectTo()
+      {
+        return URL::previous();
+      }
 }
