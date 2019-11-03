@@ -117,7 +117,7 @@
                                                 <a class="dropdown-link" href="dashboard-pricing-plan.html"><i class="fas fa-fw fa-gem"></i>My Plan</a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a class="dropdown-link " href="dashboard-listing-profile.html"><i class="fas fa-fw fa-user-circle"></i>Profile</a>
+                                                <a class="dropdown-link " href="/member/edit"><i class="fas fa-fw fa-user-circle"></i>Profile編集</a>
                                             </li>
                                             <li class="dropdown-item">
                                                 <a class="dropdown-link" href="index.html"><i class="fas fa-fw fa-sign-out-alt"></i>Logout</a>
@@ -160,7 +160,7 @@
                                         <a class="nav-link" href="dashboard-pricing-plan.html"><i class="fas fa-fw fa-gem"></i>My Plan</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="dashboard-listing-profile.html"><i class="fas fa-fw fa-user-circle"></i>Profile</a>
+                                        <a class="nav-link" href="/member/edit"><i class="fas fa-fw fa-user-circle"></i>Profile編集</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.html"><i class="fas fa-fw fa-sign-out-alt"></i>Logout</a>

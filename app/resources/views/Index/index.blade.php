@@ -112,29 +112,7 @@
         <div class="space-lg space-md space-xs">
             <div class="container-fluid">
                 <div class="row">
-                      <!-- section heading start  -->
-            
-                       <!-- section heading close  -->
-               
-                           <!-- space showcase start  -->
-                       
-                        <!-- space showcase close  -->
-                  
-                    <!-- space showcase start  -->
-                   
-                    <!-- space showcase close  -->
-                    <!-- space showcase start  -->
-                    
-                    <!-- space showcase close  -->
-                    <!-- space showcase start  -->
-                    
-                    <!-- space showcase close  -->
-                    <!-- space showcase start  -->
-                   
-                    <!-- space showcase close  -->
-                    <!-- space showcase start  -->
-                   
-                    <!-- space showcase close  -->
+  
                 </div>
             </div>
         </div>
@@ -363,6 +341,8 @@
                 </div>
             </div>
         </div>
+
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=books&f=ifr&linkID=e48ec2444b35d43f092c28494c63bd8d&t=tosi1985-22&tracking_id=tosi1985-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
                <!-- footer section start -->
         <div class="footer-dark">
             <div class="container">

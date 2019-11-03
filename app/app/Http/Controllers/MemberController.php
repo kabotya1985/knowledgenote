@@ -16,7 +16,7 @@ class MemberController extends Controller
   public function edit()
   {
     $frameworks = Framework::all();
-    return view('index',['frameworklist'=>$frameworks]);
+    return view('member/edit');
   }
 
 }
