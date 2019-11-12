@@ -1,6 +1,0 @@
-# Only scss & css changes.
-# fixed responsive issue on event-details & category
-
-
-# Please email me if you find out some bugs or issues  :)
-# gtanim@gmail.com

@@ -15,7 +15,6 @@ use Carbon\Traits\Mixin;
 use Carbon\Traits\Options;
 use Closure;
 use DateInterval;
-use Exception;
 use InvalidArgumentException;
 
 /**
@@ -284,16 +283,16 @@ class CarbonInterval extends DateInterval
     /**
      * Create a new CarbonInterval instance.
      *
-     * @param int|null $years
-     * @param int|null $months
-     * @param int|null $weeks
-     * @param int|null $days
-     * @param int|null $hours
-     * @param int|null $minutes
-     * @param int|null $seconds
-     * @param int|null $microseconds
+     * @param int $years
+     * @param int $months
+     * @param int $weeks
+     * @param int $days
+     * @param int $hours
+     * @param int $minutes
+     * @param int $seconds
+     * @param int $microseconds
      *
-     * @throws Exception
+     * @throws \Exception
      */
     public function __construct($years = 1, $months = null, $weeks = null, $days = null, $hours = null, $minutes = null, $seconds = null, $microseconds = null)
     {
@@ -1077,9 +1076,7 @@ class CarbonInterval extends DateInterval
         $macro = static::$macros[$name];
 
         if ($macro instanceof Closure) {
-            $boundMacro = @$macro->bindTo($this, static::class) ?: @$macro->bindTo(null, static::class);
-
-            return call_user_func_array($boundMacro ?: $macro, $parameters);
+            return call_user_func_array($macro->bindTo($this, static::class), $parameters);
         }
 
         return call_user_func_array($macro, $parameters);
@@ -1099,9 +1096,7 @@ class CarbonInterval extends DateInterval
     public function __call($method, $parameters)
     {
         if (static::hasMacro($method)) {
-            return static::bindMacroContext($this, function () use (&$method, &$parameters) {
-                return $this->callMacro($method, $parameters);
-            });
+            return $this->callMacro($method, $parameters);
         }
 
         $action = substr($method, 0, 4);
@@ -1435,9 +1430,7 @@ class CarbonInterval extends DateInterval
                 }
             }
 
-            $aTime = $aUnit ? $handleDeclensions('a_'.$unit.'_'.$transId, $count) : null;
-
-            $time = $aTime ?: $handleDeclensions($unit.'_'.$transId, $count) ?: $time;
+            $time = $handleDeclensions($unit.'_'.$transId, $count) ?: $time;
         }
 
         $time = [':time' => $time];
