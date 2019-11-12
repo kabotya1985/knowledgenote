@@ -7,8 +7,7 @@ use App\models\Framework;
 use App\Http\Requests\SearchRequest;
 
 
-
-class Searchcontroller extends Controller
+class SearchController extends Controller
 {
 
   public function search(SearchRequest $request)

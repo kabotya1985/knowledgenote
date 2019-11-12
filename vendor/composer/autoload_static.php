@@ -417,7 +417,7 @@ class ComposerStaticInite66b890b56bf3eca6359c50b1211462e
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/IndexController.php',
         'App\\Http\\Controllers\\MemberController' => __DIR__ . '/../..' . '/app/Http/Controllers/MemberController.php',
-        'App\\Http\\Controllers\\Searchcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/Searchcontroller.php',
+        'App\\Http\\Controllers\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/Searchcontroller.php',
         'App\\Http\\Controllers\\SignupController' => __DIR__ . '/../..' . '/app/Http/Controllers/SignupController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',

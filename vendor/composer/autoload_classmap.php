@@ -19,7 +19,7 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\IndexController' => $baseDir . '/app/Http/Controllers/IndexController.php',
     'App\\Http\\Controllers\\MemberController' => $baseDir . '/app/Http/Controllers/MemberController.php',
-    'App\\Http\\Controllers\\Searchcontroller' => $baseDir . '/app/Http/Controllers/Searchcontroller.php',
+    'App\\Http\\Controllers\\SearchController' => $baseDir . '/app/Http/Controllers/Searchcontroller.php',
     'App\\Http\\Controllers\\SignupController' => $baseDir . '/app/Http/Controllers/SignupController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',

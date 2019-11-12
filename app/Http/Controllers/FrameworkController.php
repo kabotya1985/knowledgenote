@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Framework;
-use App\models\Framework_tag;
-use App\models\Tag;
-use App\models\Post;
+use App\Models\Framework;
+use App\Models\Framework_tag;
+use App\Models\Tag;
+use App\Models\Post;
 use App\Http\Requests\FrameworkRequest;
 use App\Http\Requests\PostRequest;
 
@@ -14,10 +14,12 @@ use App\Http\Requests\PostRequest;
 
 class FrameworkController extends Controller
 {
+    /*
   public function __construct()
   {
       $this->middleware('auth');
   }
+    */
   
   public function detail(request $request)
   {

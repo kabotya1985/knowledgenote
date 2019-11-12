@@ -3,16 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\App\models\Framework;
+use App\Models\Framework;
 use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
 
-  public function index()
-  {
-    $frameworks = Framework::all();
-    return view('index/index',['frameworklist'=>$frameworks]);
-  }
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index(Request $request)
+    {
+        // パラメータを取得
+        $keyword = $request->get('keyword');
+
+        // パラメータが指定ありだった場合
+        $framework_list = [];
+        if ($keyword != "") {
+            $sql = "SELECT * FROM framework WHERE name LIKE '%".$keyword."%' OR description LIKE '".$keyword."'";
+            $framework_list = DB::select($sql);
+        } else {
+            $framework_list = Framework::all();
+        }
+        return view('index/index',[
+            'framework_list' => $framework_list,
+            'keyword' => $keyword
+        ]);
+    }
 
 }
