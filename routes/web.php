@@ -30,8 +30,10 @@ Route::get('test/signupdone', 'TestController@signupdone');
 
 Route::get('/', 'IndexController@index');
 Route::get('index', 'IndexController@index');
-Route::get('search', 'SearchController@search');
 Route::get('framework/detail', 'FrameworkController@detail');
+
+
+Route::get('search', 'SearchController@search');
 Route::get('framework/form', 'FrameworkController@form');
 Route::post('framework/confirm', 'FrameworkController@confirm');
 Route::post('framework/done', 'FrameworkController@done');

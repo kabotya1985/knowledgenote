@@ -69,7 +69,7 @@
                 </div>
                 <div class="listing-detail-header" id="overview">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="listing-detail-head">
                                 <h4 class="listing-detail-card-title" style="padding:0;margin:0;">イメージ</h4>
                                 <div style="padding:12px 0 24px 0;">
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="listing-detail-head" >
                                 <h4 class="listing-detail-card-title" style="padding:0;margin:0;">説明</h4>
                                 <div style="padding:6px 0 12px 0;">
@@ -103,6 +103,41 @@
             </div>
         </div>
 
+        <div style="margin-top:24px;">
+            <div class="row">
+                @if (count($case_list) > 0)
+                    @foreach ($case_list as $case)
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="listing-block">
+                                <div class="listing-img">
+                                    <div style="width:100%;height:280px;overflow:hidden;background-color:#fefefe;border:1px solid #eee;border-top-left-radius:6px;border-top-right-radius:6px;">
+                                        <div style="width:100%;padding:139px 0;text-align:center;background-color:#eee;border-top-left-radius:3px;border-top-right-radius:3px;">No Image</div>
+                                        <div class="listing-badge">ビジネス</div>
+                                    </div>
+                                    @if ($case->company != "")
+                                        <a class="listing-category-badge badge-light-brose">
+                                            {{ $case->company }}
+                                        </a>
+                                    @endif
+                                    <div class="like-icon"></div>
+                                </div>
+                                <div class="listing-content">
+                                    <div class="listing-content-head" style="height:60px;">
+                                        <h3 class="listing-content-head-title"> <a href="{{ $case->url }}" target="_blank">{{ $case->case }}</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @else
+                    <div class="col-12">
+                        <div style="text-align:center;padding:120px 0;">
+                            <h3>該当するフレームワーク事例はありませんでした。</h3>
+                        </div>
+                    </div>
+                @endif
+            </div>
+        </div>
 
 
     </div>

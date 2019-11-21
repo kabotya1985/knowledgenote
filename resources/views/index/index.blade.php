@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="hero-search-area-caption">
-                            <h1 style="color:black;font-size:36px;font-weight:bold;">frameworkを探す</h1>
+                            <h1 style="color:black;font-size:36px;font-weight:bold;">フレームワークを探す</h1>
                         </div>
                         <form action="/" method="get">
                             <div style="max-width:100%;width:580px;margin:0 auto;">
@@ -83,21 +83,23 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="listing-block">
                             <div class="listing-img">
-                                @if ($framework->image_url != "")
-                                    <a href="/framework/detail?id={{ $framework->id }}"> <img src="{{ $framework->image_url }}" style="border-top-left-radius:3px;border-top-right-radius:3px;" alt="" class="img-fluid"></a>
-                                @else
-                                    <div style="width:100%;padding:139px 0;text-align:center;background-color:#eee;border-top-left-radius:3px;border-top-right-radius:3px;">No Image</div>
-                                @endif
-                                <div class="listing-badge">ビジネス</div>
+                                <div style="width:100%;height:280px;overflow:hidden;background-color:#fefefe;border:1px solid #eee;border-top-left-radius:6px;border-top-right-radius:6px;">
+                                    @if ($framework->image_url != "")
+                                        <a href="/framework/detail?id={{ $framework->id }}"><img src="{{ $framework->image_url }}" style="min-height:280px;border-top-left-radius:3px;border-top-right-radius:3px;" alt="" class="img-fluid"></a>
+                                    @else
+                                        <div style="width:100%;padding:139px 0;text-align:center;background-color:#eee;border-top-left-radius:3px;border-top-right-radius:3px;">No Image</div>
+                                    @endif
+                                    <div class="listing-badge">ビジネス</div>
+                                </div>
                                 @if ($framework->source_name != "")
-                                <a class="listing-category-badge badge-light-brose">
-                                    引用元: {{ $framework->source_name }}
-                                </a>
+                                    <a class="listing-category-badge badge-light-brose">
+                                        引用元: {{ $framework->source_name }}
+                                    </a>
                                 @endif
                                 <div class="like-icon"></div>
                             </div>
                             <div class="listing-content">
-                                <div class="listing-content-head">
+                                <div class="listing-content-head" style="height:100px;">
                                     <h3 class="listing-content-head-title"> <a href="/framework/detail?id={{ $framework->id }}">{{ $framework->name }}</a></h3>
                                     <p class="listing-content-head-text">{{ mb_substr($framework->description, 0, 90) }}...</p>
                                 </div>

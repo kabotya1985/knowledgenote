@@ -9,7 +9,7 @@ use App\Models\Tag;
 use App\Models\Post;
 use App\Http\Requests\FrameworkRequest;
 use App\Http\Requests\PostRequest;
-
+use Illuminate\Support\Facades\DB;
 
 
 class FrameworkController extends Controller
@@ -25,8 +25,15 @@ class FrameworkController extends Controller
   {
       $id = $request -> get("id");
       $data = Framework::find($id);
-     
-      return view('framework/detail',['data'=>$data]);
+
+      // 事例を取得
+      $sql = "SELECT * FROM `case` WHERE framework_id = ?";
+      $case_list = DB::select($sql, [$id]);
+
+      return view('framework/detail',[
+          'data' => $data,
+          'case_list' => $case_list
+      ]);
 
   }
 
