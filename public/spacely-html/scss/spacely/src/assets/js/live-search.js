@@ -1,0 +1,2 @@
+/* live search */
+jQuery(document).ready(function(e){e(".live-search-list li").each(function(){e(this).attr("data-search-term",e(this).text().toLowerCase())}),e(".live-search-box").on("keyup",function(){var t=e(this).val().toLowerCase();e(".live-search-list li").each(function(){0<e(this).filter("[data-search-term *= "+t+"]").length||t.length<1?e(this).show():e(this).hide()})})});

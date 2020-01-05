@@ -33,6 +33,8 @@ Route::get('index', 'IndexController@index');
 Route::get('framework/detail', 'FrameworkController@detail');
 
 
+
+
 Route::get('search', 'SearchController@search');
 Route::get('framework/form', 'FrameworkController@form');
 Route::post('framework/confirm', 'FrameworkController@confirm');
