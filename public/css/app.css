@@ -4572,6 +4572,7 @@ input[type=button].btn-block {
           align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  height: 100vh;
 }
 
 .navbar-brand {

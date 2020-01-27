@@ -12,7 +12,7 @@ use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\DB;
 
 
-class FrameworkController extends Controller
+class DashboardController extends Controller
 {
     /*
   public function __construct()
@@ -21,19 +21,10 @@ class FrameworkController extends Controller
   }
     */
   
-  public function index(request $request)
+  public function index(Request $request)
   {
-      $id = $request -> get("id");
-      $data = Framework::find($id);
-
-      // 事例を取得
-      $sql = "SELECT * FROM `case` WHERE framework_id = ?";
-      $case_list = DB::select($sql, [$id]);
-
-      return view('framework/detail');
-
-  }
+       return view('dashboard/index');
+    }
 
   
-
 }
