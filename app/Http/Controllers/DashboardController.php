@@ -20,11 +20,21 @@ class DashboardController extends Controller
       $this->middleware('auth');
   }
     */
-  
-  public function index(Request $request)
+    public function index(Request $request)
   {
        return view('dashboard/index');
   }
+
+  public function post(Request $request)
+  {
+       return view('dashboard/post');
+  }
+
+  public function profile(Request $request)
+  {
+       return view('dashboard/profile');
+  }
+
 
   
 }
