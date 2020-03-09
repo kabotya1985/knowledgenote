@@ -38,20 +38,15 @@ Route::get('/dashboard/index', 'DashboardController@index');
 Route::get('/dashboard/post', 'DashboardController@post');
 Route::get('/dashboard/profile', 'DashboardController@profile');
 
+Auth::routes();
+
 
 Route::get('search', 'SearchController@search');
 Route::get('framework/form', 'FrameworkController@form');
 Route::post('framework/confirm', 'FrameworkController@confirm');
 Route::post('framework/done', 'FrameworkController@done');
-Route::get('member/index', 'MemberController@index');
-Route::get('member/edit', 'MemberController@edit');
-Route::get('signin/form', 'Auth\SigninController@form')->name('home');
-Route::post('signin/form', 'Auth\SigninController@form')->name('home');
-Route::get('signup/form', 'SignupController@form');
-Route::post('signup/confirm', 'SignupController@confirm');
-Route::post('signup/done', 'SignupController@done');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('login', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('login', 'Auth\RegisterController@register');
+
+
+
 

@@ -42,10 +42,12 @@
                             <div class="collapse navbar-collapse" id="navbar-classic">
                                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
                                     <li><a class="nav-link" href="/index">ホーム</a></li>
-                                    <!-- li><a class="nav-link" href="/framework/form">framework作成</a></li -->
-                                    <!-- li><a class="nav-link" href="/member">member</a></li -->
-                                    <!-- li><a class="nav-link" href="/signin/form">ログイン</a></li -->
+                                    <li><a class="nav-link" href="/register">登録</a></li>
+                                    <li><a class="nav-link" href="/login">ログイン</a></li>
                                 </ul>
+                            </div>
+                            <div class="user_id">
+                                {{ Auth::id() }}
                             </div>
                         </nav>
                     </div>
