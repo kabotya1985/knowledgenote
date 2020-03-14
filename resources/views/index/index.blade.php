@@ -54,6 +54,7 @@
                                     <li><a class="nav-link" href="/index">ホーム</a></li>
                                     <li><a class="nav-link" href="/register">登録</a></li>
                                     <li><a class="nav-link" href="/login">ログイン</a></li>
+                                    <li><a class="nav-link" href="/">ログアウト</a></li>
                                 </ul>
                             </div>
                             <div class="user_id">
