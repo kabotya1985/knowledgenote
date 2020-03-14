@@ -33,7 +33,7 @@ Route::get('/', 'IndexController@index');
 Route::get('index', 'IndexController@index');
 Route::get('framework/detail', 'FrameworkController@detail');
 
-// 管理画面
+//管理画面
 Route::get('/dashboard/index', 'DashboardController@index');
 Route::get('/dashboard/post', 'DashboardController@post');
 Route::get('/dashboard/profile', 'DashboardController@profile');
